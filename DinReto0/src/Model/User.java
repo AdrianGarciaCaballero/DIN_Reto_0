@@ -14,7 +14,7 @@ public class User {
     private String name;
     private String userName;
     private String password;
-    private Integer age;
+    private String  dni;
     private Double balance ;
 
     public String getName() {
@@ -41,12 +41,12 @@ public class User {
         this.password = password;
     }
 
-    public Integer getAge() {
-        return age;
+    public String dni() {
+        return dni;
     }
 
-    public void setAge(Integer age) {
-        this.age = age;
+    public void dni(String age) {
+        this.dni = dni;
     }
 
     public Double getBalance() {
