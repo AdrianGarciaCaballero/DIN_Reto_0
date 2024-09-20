@@ -5,6 +5,7 @@
  */
 package View;
 
+import dao.DBUserDataAccessor;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -25,6 +26,9 @@ public class UserDataWindowController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        DBUserDataAccessor jdjd = new DBUserDataAccessor();
+        jdjd.getUserData();
         // TODO
     }    
     

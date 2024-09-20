@@ -24,6 +24,12 @@ public class User {
         this.dni = dni;
         this.balance = balance;
     }
+
+    @Override
+    public String toString() {
+        return "User{" + "name=" + name + ", userName=" + userName + ", password=" + password + ", dni=" + dni + ", balance=" + balance + '}';
+    }
+    
     
     
 
