@@ -6,11 +6,14 @@
 package dao;
 
 import Model.User;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
+
 
 /**
  *
@@ -34,6 +37,7 @@ public class DBUserDataAccessor implements DataAccessible{
     @Override
     public User getUserData() {
         
+
 		User userData = null;
 
 		try {
@@ -91,6 +95,10 @@ public class DBUserDataAccessor implements DataAccessible{
 	}
     
     
+
+        
+       
+
     }
     
 

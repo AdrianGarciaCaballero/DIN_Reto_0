@@ -12,5 +12,6 @@ import Model.User;
  * @author 2dam
  */
 public interface DataAccessible {
+
     public User getUserData();
 }
