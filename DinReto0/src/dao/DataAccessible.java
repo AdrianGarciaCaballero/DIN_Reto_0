@@ -5,10 +5,12 @@
  */
 package dao;
 
+import Model.User;
+
 /**
  *
  * @author 2dam
  */
 public interface DataAccessible {
-    public void getUserData();
+    public User getUserData();
 }
