@@ -5,6 +5,8 @@
  */
 package dao;
 
+import Model.User;
+
 /**
  *
  * @author 2dam
@@ -12,8 +14,9 @@ package dao;
 public class FileUserDataAccessor  implements DataAccessible{
 
     @Override
-    public void getUserData() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public User getUserData() {
+        
+        return null;
     }
     
 }
