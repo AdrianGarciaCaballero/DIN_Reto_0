@@ -15,8 +15,13 @@ public class FileUserDataAccessor  implements DataAccessible{
 
     @Override
     public User getUserData() {
+<<<<<<< HEAD
         
         return null;
+=======
+        return null;
+        
+>>>>>>> fdd8d9a0420922ac7afb0461edb156f8e5cb4abf
     }
     
 }
