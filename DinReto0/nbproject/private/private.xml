@@ -3,14 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/2dam/Desktop/dami24/DIN/DIN_Reto_0/DinReto0/src/View/Application.java</file>
-            <file>file:/C:/Users/2dam/Desktop/dami24/DIN/DIN_Reto_0/DinReto0/src/View/UserDataView.fxml</file>
-            <file>file:/C:/Users/2dam/Desktop/dami24/DIN/DIN_Reto_0/DinReto0/src/Model/User.java</file>
-            <file>file:/C:/Users/2dam/Desktop/dami24/DIN/DIN_Reto_0/DinReto0/src/dao/DataAccessible.java</file>
-            <file>file:/C:/Users/2dam/Desktop/dami24/DIN/DIN_Reto_0/DinReto0/src/dao/DBUserDataAccessor.java</file>
-            <file>file:/C:/Users/2dam/Desktop/dami24/DIN/DIN_Reto_0/DinReto0/src/dao/FileUserDataAccessor.java</file>
-            <file>file:/C:/Users/2dam/Desktop/dami24/DIN/DIN_Reto_0/DinReto0/src/View/UserDataWindowController.java</file>
-            <file>file:/C:/Users/2dam/Desktop/dami24/DIN/DIN_Reto_0/DinReto0/src/dao/UserManagerFactory.java</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/View/Application.java</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/dao/DBUserDataAccessor.java</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/Database/Database.txt</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/View/UserDataView.fxml</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/View/UserDataWindowController.java</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/dao/DataAccessible.java</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/dao/UserManagerFactory.java</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/config/config.properties</file>
+            <file>file:/C:/Users/Omar/Desktop/DIN_Reto_0/DinReto0/src/dao/FileUserDataAccessor.java</file>
         </group>
     </open-files>
 </project-private>

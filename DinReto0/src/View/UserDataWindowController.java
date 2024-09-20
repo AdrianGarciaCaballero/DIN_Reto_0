@@ -5,6 +5,9 @@
  */
 package View;
 
+import dao.DataAccessible;
+import dao.FileUserDataAccessor;
+import dao.UserManagerFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
@@ -17,15 +20,17 @@ import javafx.scene.control.Label;
  * @author 2dam
  */
 public class UserDataWindowController implements Initializable {
-    
+
     @FXML
     private Label label;
-    
-    
-    
+
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-    }    
-    
+
+        UserManagerFactory factObject = new UserManagerFactory();
+        DataAccessible dba = factObject.getObjectType();
+        dba.getUserData();
+    }
+
 }

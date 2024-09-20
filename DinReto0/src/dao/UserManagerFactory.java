@@ -5,23 +5,26 @@
  */
 package dao;
 
+import java.util.ResourceBundle;
+
 /**
  *
  * @author 2dam
  */
 public class UserManagerFactory {
     
-      private static Boolean isDB = true;
+      private static String readFrom =  ResourceBundle.getBundle("config/config").getString("readFrom");
 
-    public static DataAccessible getUserInfo() {
+    public static DataAccessible getObjectType() {
         
-        if (isDB) {
-            isDB = false;
+        if (readFrom.equals("db")) {
+            System.out.println("Hi from db");
             return new DBUserDataAccessor();
-        } else {
-            isDB = true;
+        } else if (readFrom.equals("file")) {
+             System.out.println("Hi from file");
+
             return new FileUserDataAccessor();
         }
-
+        return null;
     }
 }

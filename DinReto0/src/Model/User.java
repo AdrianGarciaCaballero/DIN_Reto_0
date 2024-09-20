@@ -17,6 +17,22 @@ public class User {
     private String  dni;
     private Double balance ;
 
+    public User(String name, String userName, String password, String dni, Double balance) {
+        this.name = name;
+        this.userName = userName;
+        this.password = password;
+        this.dni = dni;
+        this.balance = balance;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" + "name=" + name + ", userName=" + userName + ", password=" + password + ", dni=" + dni + ", balance=" + balance + '}';
+    }
+    
+    
+    
+
     public String getName() {
         return name;
     }
