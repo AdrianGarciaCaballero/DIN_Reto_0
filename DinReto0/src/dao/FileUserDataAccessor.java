@@ -22,9 +22,6 @@ public class FileUserDataAccessor implements DataAccessible {
 
     @Override
     public User getUserData() {
-
-        User userData = null;
-
         // Accessing the properties
         String dni = ResourceBundle.getBundle("Database/userData").getString("dni");
         String name = ResourceBundle.getBundle("Database/userData").getString("name");
@@ -32,11 +29,8 @@ public class FileUserDataAccessor implements DataAccessible {
         String password = ResourceBundle.getBundle("Database/userData").getString("password");
         double balance = Double.parseDouble(ResourceBundle.getBundle("Database/userData").getString("balance"));
 
-        userData = new User(name, userName, password, dni, balance);
-
-        System.out.println(userData.toString());
-
-        return userData;
+       return new User(name, userName, password, dni, balance);
+   
     }
 
 }

@@ -16,13 +16,9 @@ public class UserManagerFactory {
       private static String readFrom =  ResourceBundle.getBundle("config/config").getString("readFrom");
 
     public static DataAccessible getDataAccessible() {
-        
         if (readFrom.equals("db")) {
-            System.out.println("Hi from db");
             return new DBUserDataAccessor();
         } else if (readFrom.equals("file")) {
-             System.out.println("Hi from file");
-
             return new FileUserDataAccessor();
         }
         return null;

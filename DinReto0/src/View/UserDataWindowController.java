@@ -11,9 +11,12 @@ import dao.FileUserDataAccessor;
 import dao.UserManagerFactory;
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 
 /**
@@ -28,14 +31,18 @@ public class UserDataWindowController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        try {
+            User user = UserManagerFactory.getDataAccessible().getUserData();
 
-        UserManagerFactory factObject = new UserManagerFactory();
-        DataAccessible dba = factObject.getDataAccessible();
-        User user = dba.getUserData();
-        name_txt.setText(user.getName());
-        username_txt.setText(user.getUserName());
-        pasword_txt.setText(user.getPassword());
-        dni_txt.setText(user.getDni());
-        balance_txt.setText(user.getBalance().toString());
+            name_txt.setText(user.getName());
+            username_txt.setText(user.getUserName());
+            pasword_txt.setText(user.getPassword());
+            dni_txt.setText(user.getDni());
+            balance_txt.setText(user.getBalance().toString());
+
+        } catch (Exception e) {
+            Logger.getLogger("View").severe(e.getLocalizedMessage());
+            new Alert(Alert.AlertType.ERROR,e.getLocalizedMessage(),ButtonType.OK);
+        }
     }
 }

@@ -12,6 +12,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Logger;
 
 /**
  *
@@ -44,20 +45,18 @@ public class DBUserDataAccessor implements DataAccessible {
                 String dni = resultSet.getString("dni");
                 String userName = resultSet.getString("username");
                 String name = resultSet.getString("nombre");
-                String  password = resultSet.getString("password");
+                String password = resultSet.getString("password");
                 double balance = resultSet.getDouble("balance");
 
                 userData = new User(name, userName, password, dni, balance);
-                
-                System.out.println(userData.toString());
 
             }
         } catch (SQLException e) {
-            System.out.println("Error de SQL");
-            e.printStackTrace();
+
+            Logger.getLogger("dao").severe(e.getLocalizedMessage());
+            // e.printStackTrace();
         } finally {
             closeConnection();
-            ;
         }
         return userData;
     }
@@ -67,9 +66,11 @@ public class DBUserDataAccessor implements DataAccessible {
             // String url =
             // "jdbc:mysql://localhost:3306/usuarios?serverTimezone=Europe/Madrid&useSSL=false";
             connection = DriverManager.getConnection(DATABASE_URL, USERNAME, PASSWORD);
-            System.out.println("Open Connection");
+            Logger.getLogger("dao").severe("Connection opened");
+
         } catch (SQLException e) {
-            e.printStackTrace();
+            Logger.getLogger("dao").severe(e.getLocalizedMessage());
+
         }
     }
 
@@ -81,9 +82,10 @@ public class DBUserDataAccessor implements DataAccessible {
             if (connection != null) {
                 connection.close();
             }
-            System.out.println("Close Connection");
+            Logger.getLogger("dao").info("Connection closed");
         } catch (SQLException e) {
-            e.printStackTrace();
+            Logger.getLogger("dao").info(e.getLocalizedMessage());
+
         }
     }
 
