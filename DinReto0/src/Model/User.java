@@ -29,9 +29,6 @@ public class User {
     public String toString() {
         return "User{" + "name=" + name + ", userName=" + userName + ", password=" + password + ", dni=" + dni + ", balance=" + balance + '}';
     }
-    
-    
-    
 
     public String getName() {
         return name;
@@ -57,13 +54,15 @@ public class User {
         this.password = password;
     }
 
-    public String dni() {
+    public String getDni() {
         return dni;
     }
 
-    public void dni(String age) {
+    public void setDni(String dni) {
         this.dni = dni;
     }
+
+  
 
     public Double getBalance() {
         return balance;

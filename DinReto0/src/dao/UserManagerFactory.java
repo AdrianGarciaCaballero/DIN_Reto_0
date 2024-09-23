@@ -15,7 +15,7 @@ public class UserManagerFactory {
     
       private static String readFrom =  ResourceBundle.getBundle("config/config").getString("readFrom");
 
-    public static DataAccessible getObjectType() {
+    public static DataAccessible getDataAccessible() {
         
         if (readFrom.equals("db")) {
             System.out.println("Hi from db");

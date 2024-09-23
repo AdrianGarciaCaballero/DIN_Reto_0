@@ -8,6 +8,7 @@ package View;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 /**
@@ -15,7 +16,6 @@ import javafx.stage.Stage;
  * @author 2dam
  */
 public class Application extends javafx.application.Application {
-    
     @Override
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("UserDataView.fxml"));
