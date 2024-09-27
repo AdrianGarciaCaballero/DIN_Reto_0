@@ -65,6 +65,8 @@ public class DBUserDataAccessor implements DataAccessible {
 
                 // Initialize the User object with fetched data
                 userData = new User(name, userName, password, dni, balance);
+              Logger.getLogger(DBUserDataAccessor.class.getName()).severe("user created correctly");
+
             }
 
         } catch (SQLException e) {
