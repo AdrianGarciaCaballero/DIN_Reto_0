@@ -20,7 +20,7 @@ import java.util.logging.Logger;
  * Manages database connections and query execution to retrieve user details such as name, username, password, DNI, and balance.
  * 
  * @version 1.0
- * @author Adrian & Omar
+ * @author Adrian and Omar
  */
 public class DBUserDataAccessor implements DataAccessible {
 
@@ -41,8 +41,8 @@ public class DBUserDataAccessor implements DataAccessible {
      * Executes an SQL query to fetch the user's name, username, password, DNI, and balance.
      * 
      * @return {@link User} object populated with the fetched data from the database
-     * @throws SQLException if a database access error occurs
      */
+     
     @Override
     public User getUserData() {
 

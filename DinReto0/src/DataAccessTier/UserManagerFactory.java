@@ -13,7 +13,7 @@ import java.util.ResourceBundle;
  * The configuration is read from a properties file using {@link ResourceBundle}.
  * 
  * @version 1.0
- * @author Adrian & Omar
+ * @author Adrian and Omar
  */
 public class UserManagerFactory {
 

@@ -10,7 +10,7 @@ package Model;
  * Provides user details such as name, username, password, DNI, and balance.
  * Contains getter and setter methods to access and modify user information.
  * 
- * @author Adrian & Omar
+ * @author Adrian and Omar
  * @version 1.0
  */
 public class User {

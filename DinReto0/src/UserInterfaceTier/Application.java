@@ -8,7 +8,6 @@ package UserInterfaceTier;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 /**
@@ -17,7 +16,7 @@ import javafx.stage.Stage;
  * 
  * This class overrides the start method to set up the primary stage and scene for the application.
  * 
- * @author Adrian & Omar
+ * @author Adrian and Omar
  * @version 1.0
  */
 public class Application extends javafx.application.Application {

@@ -1,23 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package DataAccessTier;
 
 import Model.User;
 
 /**
- *
- * @author Adrian & Omar
+ * The {@code DataAccessible} interface provides a method to retrieve user data.
+ * 
+ * <p>It is expected that classes implementing this interface will provide the 
+ * logic to access and return the {@code User} object.
+ * 
+ * @author Adrian and Omar
  * @version 1.0
  */
 public interface DataAccessible {
 
     /**
-     *
-     * @return User
-     * @throws Exception
+     * Retrieves user data.
+     * 
+     * @return the {@link User} object containing the user's data.
+     * @throws Exception if an error occurs during data retrieval.
      */
-    public User getUserData()throws Exception;
+    public User getUserData() throws Exception;
 }

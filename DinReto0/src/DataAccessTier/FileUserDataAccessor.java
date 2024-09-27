@@ -20,7 +20,7 @@ import java.util.ResourceBundle;
  * User data includes name, username, password, DNI, and balance.
  * 
  * @version 1.0
- * @author Adrian & Omar
+ * @author Adrian and Omar
  */
 public class FileUserDataAccessor implements DataAccessible {
 
