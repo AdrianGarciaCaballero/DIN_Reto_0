@@ -1,2 +1,8 @@
-/DinReto0/dist/
-/DinReto0/build/
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
