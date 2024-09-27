@@ -6,6 +6,7 @@
 package DataAccessTier;
 
 import java.util.ResourceBundle;
+import java.util.logging.Logger;
 
 /**
  * Factory class responsible for creating an instance of {@link DataAccessible}.
@@ -29,8 +30,10 @@ public class UserManagerFactory {
      */
     public static DataAccessible getDataAccessible() {
         if (readFrom.equals("db")) {
+            Logger.getLogger(UserManagerFactory.class.getName()).severe("return object from db");
             return new DBUserDataAccessor();
         } else if (readFrom.equals("file")) {
+            Logger.getLogger(UserManagerFactory.class.getName()).severe("return object from file");
             return new FileUserDataAccessor();
         }
         return null;
